@@ -9,3 +9,15 @@ test("isPalindrome as one parameter", () => {
 });
 
 // TODO add your tests here
+
+test("word is palindrome", () => {
+  expect(isPalindrome('kayak')).toBe(true);
+  expect(isPalindrome("")).toBe(true);
+  expect(isPalindrome(null)).toBe(true);
+});
+
+test("word is not palindrome", () => {
+  expect(isPalindrome('toast')).toBe(false);
+  expect(isPalindrome('rottot')).toBe(false);
+});
+

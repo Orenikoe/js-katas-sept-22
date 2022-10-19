@@ -19,4 +19,23 @@ Add you own tests.
 
 // TODO add your code here
 
+function isPalindrome(word) {
+let txt = word;
+
+while ( word !== "" && word !== null && txt.length > 1) {
+if (txt.charAt(0) === txt.charAt(txt.length - 1)) {
+let sliced = txt.substring(1,txt.length -1)
+txt = sliced;
+
+} else {
+    return false
+}
+
+}
+return true;
+
+}
+
+
+
 module.exports = isPalindrome;
